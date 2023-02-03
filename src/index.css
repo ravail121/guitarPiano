@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.ReactPiano__Key--active.ReactPiano__Key--natural {
+  background :yellow;
+  /* border: none  !important; */
+}
+
+
+.ReactPiano__Key--natural{
+  border: none !important;
+  border-radius: 0 0 5px 5px  !important;
+  /* border-radius: 0 5px 5px 0 ; */
+}
+
+.ReactPiano__Key--accidental{
+  border: none !important;
+  border-radius: 0 0 5px 5px  !important;
+  /* border-radius: 0 5px 5px 0 ; */
+}
+
+.ReactPiano__Key--active.ReactPiano__Key--accidental {
+  background:yellow;
+  /* border: none !important; */
+}
+
+.ReactModalPortal {
+  z-index: 9;
+}
+
+
+
+@supports(padding: max(0px)) {
+  .content {
+      padding-left: max(12px, env(safe-area-inset-left));
+      padding-right: max(12px, env(safe-area-inset-right));
+      padding-top: 18px;
+  }
+}
+
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+  color:red;
+}
+
+
+input[type=submit] {
+  background: #222326;
+  width: 100%;
+  max-width: 250px;
+  padding: 2vh;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px 4px;
+  margin-top: 10px;
+  color: white;
+}
+
+.ReactPiano__Keyboard {
+  max-height: 170px !important;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.ReactPiano__NoteLabel--natural.ReactPiano__NoteLabel--active {
+  color: black !important
+}
+
+.ReactPiano__NoteLabel--accidental.ReactPiano__NoteLabel--active {
+  color: black
+}
+
+.ReactPiano__NoteLabel {
+  font-size: 1.5em !important;
+  text-align: center;
+  text-transform: capitalize;
+  /* Disable text selection */
+  user-select: none;
+}
+
+.react-toggle-track{
+  height: 22px !important;
+  background-color: inherit !important;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.25), -2px -2px 5px 0 rgba(255, 255, 255, 0.3);
+  /* background-image: linear-gradient(135deg, rgba(0,0,0,0.255), rgba(255,255,255,0.25)); */
+}
+
+.react-toggle-thumb {
+  width: 18px !important;
+  height: 18px !important;
+  border: none !important;
+  margin-top: 1px;
+  /* background-color: inherit !important; */
+  /* background-image: linear-gradient(135deg, rgba(0,0,0,0.255), rgba(255,255,255,0.25)); */
+}
+
+.react-toggle--focus .react-toggle-thumb {
+  box-shadow: none !important;
+}
+
+/* .react-toggle--checked .react-toggle-thumb {
+  border: none;
+} */
+
+li {
+  margin: 2px 0;
+}
+
+h1 {
+  font-family: 'primus-300-light'  !important;
+  text-decoration: underline !important;
+
+
+  
+  /* font-size: 1.8rem  !important; */
+}
+
+@media only screen and (max-width: 736px) {
+  h1 {
+    font-size: 1.8rem  !important
+  }
+}
+
+
+
+@font-face {
+  font-family: 'primus-300-light';
+  src: url('./fonts/primus-300-light-webfont.woff2') format('woff2'),
+       url('./fonts/primus-300-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
